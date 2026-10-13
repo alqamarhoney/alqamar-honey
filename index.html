@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="ml" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al Qamar Honey - അൽ ഖമർ ഹണി | Pure & Natural Organic Honey</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+Malayalam:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            midnight: '#080D1A',
+            navyDark: '#040711',
+            navyCard: '#0E172A',
+            goldPrimary: '#F59E0B',
+            goldLight: '#FBBF24',
+            goldDark: '#D97706',
+            amberGlow: '#FEF3C7',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+            malayalam: ['Noto Serif Malayalam', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #040711;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D97706;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #F59E0B;
+    }
+
+    .moon-glow {
+      box-shadow: 0 0 50px -5px rgba(245, 158, 11, 0.35);
+    }
+    .gold-border-glow {
+      box-shadow: 0 0 20px rgba(245, 158, 11, 0.2);
+    }
+
+    .star-bg {
+      background-image: 
+        radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 40px 70px, #f59e0b, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 160px 120px, #fbbf24, rgba(0,0,0,0));
+      background-repeat: repeat;
+      background-size: 200px 200px;
+    }
+
+    @keyframes slideInUp {
+      from { transform: translateY(100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .animate-toast {
+      animation: slideInUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+</head>
+<body class="bg-navyDark text-slate-100 font-sans antialiased selection:bg-goldPrimary selection:text-navyDark">
+
+  <div id="toastContainer" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <header class="sticky top-0 z-40 backdrop-blur-lg bg-midnight/90 border-b border-amber-500/20 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#home" class="flex items-center gap-3 group">
+        <div class="relative w-12 h-12 flex items-center justify-center rounded-full border-2 border-amber-400 bg-white p-1 moon-glow">
+          <svg viewBox="0 0 200 200" class="w-full h-full">
+            <circle cx="100" cy="100" r="95" fill="none" stroke="#D97706" stroke-width="6"/>
+            <!-- Antennae -->
+            <path d="M90 40 C85 30, 78 30, 75 33 M110 40 C115 30, 122 30, 125 33" fill="none" stroke="#D97706" stroke-width="3.5" stroke-linecap="round"/>
+            <circle cx="75" cy="33" r="3.5" fill="#D97706"/>
+            <circle cx="125" cy="33" r="3.5" fill="#D97706"/>
+            <!-- Head -->
+            <circle cx="100" cy="46" r="11" fill="#F59E0B" stroke="#D97706" stroke-width="2"/>
+            <!-- Wings Left -->
+            <path d="M90 52 C50 32, 25 58, 55 75 C75 85, 88 65, 92 58" fill="none" stroke="#D97706" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M85 64 C60 65, 45 82, 65 92 C80 98, 88 80, 91 72" fill="none" stroke="#D97706" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Wings Right -->
+            <path d="M110 52 C150 32, 175 58, 145 75 C125 85, 112 65, 108 58" fill="none" stroke="#D97706" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M115 64 C140 65, 155 82, 135 92 C120 98, 112 80, 109 72" fill="none" stroke="#D97706" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Thorax -->
+            <path d="M88 56 C88 50, 112 50, 112 56 C115 72, 85 72, 88 56 Z" fill="#F59E0B" stroke="#D97706" stroke-width="2"/>
+            <!-- Abdomen -->
+            <path d="M88 74 C88 74, 100 68, 112 74 C116 88, 112 105, 100 118 C88 105, 84 88, 88 74 Z" fill="#F59E0B" stroke="#D97706" stroke-width="2.5"/>
+            <!-- Abdomen Stripes -->
+            <path d="M86 85 C92 82, 108 82, 114 85" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M88 95 C93 92, 107 92, 112 95" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M92 105 C95 103, 105 103, 108 105" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+            <!-- Brand Text -->
+            <text x="100" y="145" font-family="'Playfair Display', serif" font-weight="900" font-size="21" fill="#064E3B" text-anchor="middle" letter-spacing="1">AL QAMAR</text>
+            <text x="100" y="165" font-family="'Inter', sans-serif" font-weight="800" font-size="13" fill="#D97706" text-anchor="middle" letter-spacing="2">— HONEYS —</text>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-500">
+            AL QAMAR
+          </span>
+          <span class="font-malayalam text-xs text-amber-300/80 -mt-1 tracking-widest" id="navSubtext" data-i18n="nav_subtext">
+            അൽ ഖമർ ഹണി
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+        <a href="#home" class="text-amber-400 hover:text-amber-300 transition-colors" data-i18n="nav_home">ഹോം</a>
+        <a href="#products" class="text-slate-300 hover:text-amber-400 transition-colors" data-i18n="nav_products">പ്രൊഡക്റ്റുകൾ</a>
+        <a href="#benefits" class="text-slate-300 hover:text-amber-400 transition-colors" data-i18n="nav_benefits">ഗുണങ്ങൾ</a>
+        <a href="#about" class="text-slate-300 hover:text-amber-400 transition-colors" data-i18n="nav_about">ഞങ്ങളെക്കുറിച്ച്</a>
+        <a href="#reviews" class="text-slate-300 hover:text-amber-400 transition-colors" data-i18n="nav_reviews">അഭിപ്രായങ്ങൾ</a>
+        <a href="#faq" class="text-slate-300 hover:text-amber-400 transition-colors" data-i18n="nav_faq">സംശയങ്ങൾ</a>
+        <a href="#contact" class="text-slate-300 hover:text-amber-400 transition-colors" data-i18n="nav_contact">ബന്ധപ്പെടാൻ</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <!-- Language Switcher -->
+        <button onclick="toggleLanguage()" class="px-3 py-1.5 rounded-full bg-slate-800/80 hover:bg-slate-700 text-xs font-semibold text-amber-300 border border-amber-500/20 transition-all flex items-center gap-1.5" title="Switch Language">
+          <i class="fa-solid fa-globe"></i>
+          <span id="langLabel">EN</span>
+        </button>
+
+        <!-- Customizer Drawer Toggle -->
+        <button onclick="toggleCustomizerDrawer()" class="p-2.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/30 hover:bg-amber-500/20 transition-all" title="Customize Site Content">
+          <i class="fa-solid fa-sliders"></i>
+        </button>
+
+        <!-- Cart Button -->
+        <button onclick="toggleCartModal()" class="relative p-2.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/30 hover:bg-amber-500/20 transition-all">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span id="cartCountBadge" class="absolute -top-1 -right-1 bg-amber-500 text-navyDark text-[11px] font-extrabold rounded-full w-5 h-5 flex items-center justify-center">0</span>
+        </button>
+
+        <!-- Mobile Drawer Toggle -->
+        <button onclick="toggleMobileMenu()" class="md:hidden text-slate-300 p-2 text-xl focus:outline-none">
+          <i class="fa-solid fa-bars" id="menuIcon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden bg-midnight border-b border-amber-500/20 px-4 pt-2 pb-6 space-y-3">
+      <a href="#home" onclick="toggleMobileMenu()" class="block py-2 text-amber-400 font-medium" data-i18n="nav_home">ഹോം</a>
+      <a href="#products" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-amber-400" data-i18n="nav_products">പ്രൊഡക്റ്റുകൾ</a>
+      <a href="#benefits" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-amber-400" data-i18n="nav_benefits">ഗുണങ്ങൾ</a>
+      <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-amber-400" data-i18n="nav_about">ഞങ്ങളെക്കുറിച്ച്</a>
+      <a href="#reviews" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-amber-400" data-i18n="nav_reviews">അഭിപ്രായങ്ങൾ</a>
+      <a href="#faq" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-amber-400" data-i18n="nav_faq">സംശയങ്ങൾ</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-amber-400" data-i18n="nav_contact">ബന്ധപ്പെടാൻ</a>
+    </div>
+  </header>
+
+  <section id="home" class="relative min-h-[85vh] flex items-center justify-center pt-8 pb-16 overflow-hidden star-bg">
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- Text Area -->
+      <div class="space-y-6 text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs sm:text-sm font-medium">
+          <i class="fa-solid fa-certificate"></i> <span id="badgeText">100% ശുദ്ധമായ ഓർഗാനിക് ഹണി സർട്ടിഫൈഡ്</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight font-serif">
+          <span class="text-slate-100" id="heroTitle">അൽ ഖമർ ഹണി</span> <br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-500 font-malayalam text-2xl sm:text-3xl lg:text-4xl block mt-3" id="heroSubtitle">
+            പ്രകൃതിയുടെ മധുരവും പരിശുദ്ധിയും ഒരു കുപ്പിയിൽ
+          </span>
+        </h1>
+
+        <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed" id="heroDesc">
+          വിശ്വസ്തതയോടെ കാടുകളിൽ നിന്നും ഗ്രാമങ്ങളിൽ നിന്നും നേരിട്ട് ശേഖരിക്കുന്ന ഏറ്റവും ഉത്തമമായ തേൻ. യാതൊരുവിധ പ്രിസർവേറ്റീവുകളും ഇല്ലാതെ നിങ്ങളുടെ കൈകളിലേക്ക്.
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+          <a href="#products" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 text-navyDark font-extrabold text-sm hover:from-amber-400 hover:to-amber-500 transition-all shadow-xl shadow-amber-500/25 flex items-center justify-center gap-3">
+            <span data-i18n="cta_order">തേൻ ഓർഡർ ചെയ്യൂ</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="https://wa.me/919946093522?text=Hello%20Al%20Qamar%20Honey,%20I%20would%20like%20to%20know%20more%20about%20your%20pure%20honey." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-full bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/50 text-emerald-400 font-bold text-sm transition-all flex items-center justify-center gap-3">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span data-i18n="cta_whatsapp">WhatsApp നേരിട്ട് ബന്ധപ്പെടാം</span>
+          </a>
+        </div>
+
+        <!-- Trust Features -->
+        <div class="pt-8 border-t border-slate-800/80 grid grid-cols-2 gap-4 text-center lg:text-left">
+          <div>
+            <div class="text-2xl font-bold text-amber-400">100%</div>
+            <div class="text-xs text-slate-400 mt-1" data-i18n="stat_pure">തനിമയാർന്നത്</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-amber-400">Purity Test</div>
+            <div class="text-xs text-slate-400 mt-1" data-i18n="stat_tested">ലാബ് പരിശോധിച്ചത്</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hero Jar Visual -->
+      <div class="relative flex justify-center items-center">
+        <div class="relative w-72 h-72 sm:w-96 sm:h-96 rounded-full border-2 border-amber-500/40 flex items-center justify-center moon-glow bg-gradient-to-br from-midnight via-slate-900 to-amber-950/40">
+          
+          <div class="relative z-10 w-64 sm:w-80 p-6 rounded-3xl bg-midnight/90 border border-amber-500/40 backdrop-blur-md shadow-2xl text-center space-y-4 gold-border-glow">
+            <div class="w-32 h-32 mx-auto rounded-full bg-white p-2 border-4 border-amber-400 shadow-lg flex items-center justify-center">
+              <svg viewBox="0 0 200 200" class="w-full h-full">
+                <circle cx="100" cy="100" r="92" fill="none" stroke="#D97706" stroke-width="6"/>
+                <path d="M88 38 C83 26, 75 26, 72 29 M112 38 C117 26, 125 26, 128 29" fill="none" stroke="#D97706" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="72" cy="29" r="4" fill="#D97706"/>
+                <circle cx="128" cy="29" r="4" fill="#D97706"/>
+                <circle cx="100" cy="46" r="12" fill="#F59E0B" stroke="#D97706" stroke-width="2.5"/>
+                <path d="M88 52 C45 30, 20 58, 52 76 C74 88, 86 66, 91 58" fill="none" stroke="#D97706" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M84 65 C58 66, 42 84, 64 94 C80 100, 88 80, 91 71" fill="none" stroke="#D97706" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M112 52 C155 30, 180 58, 148 76 C126 88, 114 66, 109 58" fill="none" stroke="#D97706" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M116 65 C142 66, 158 84, 136 94 C120 100, 112 80, 109 71" fill="none" stroke="#D97706" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M86 56 C86 48, 114 48, 114 56 C118 74, 82 74, 86 56 Z" fill="#F59E0B" stroke="#D97706" stroke-width="2.5"/>
+                <path d="M86 75 C86 75, 100 68, 114 75 C119 90, 114 108, 100 122 C86 108, 81 90, 86 75 Z" fill="#F59E0B" stroke="#D97706" stroke-width="2.5"/>
+                <path d="M84 86 C91 82, 109 82, 116 86" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+                <path d="M86 97 C92 93, 108 93, 114 97" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+                <path d="M90 108 C94 105, 106 105, 110 108" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+                <text x="100" y="148" font-family="'Playfair Display', serif" font-weight="900" font-size="22" fill="#064E3B" text-anchor="middle" letter-spacing="1">AL QAMAR</text>
+                <text x="100" y="170" font-family="'Inter', sans-serif" font-weight="800" font-size="14" fill="#D97706" text-anchor="middle" letter-spacing="3">— HONEYS —</text>
+              </svg>
+            </div>
+            
+            <div>
+              <span class="text-[10px] text-amber-400 font-extrabold uppercase tracking-widest">Featured Choice</span>
+              <h3 class="text-xl font-bold text-slate-100 font-serif">Wild Honey</h3>
+              <p class="text-xs text-slate-400 mt-1">അൽ ഖമർ കാട്ടുതേൻ</p>
+            </div>
+
+            <div class="flex items-center justify-center gap-1.5 text-amber-400 text-sm">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span class="text-xs text-slate-300 font-sans ml-1">(5.0)</span>
+            </div>
+
+            <div class="pt-3 flex items-center justify-between border-t border-slate-800">
+              <span class="text-lg font-bold text-amber-300">₹800 <span class="text-xs text-slate-400 font-normal">/ 1kg</span></span>
+              <button onclick="quickAddFeatured()" class="px-4 py-2 bg-amber-500 text-navyDark rounded-full text-xs font-bold hover:bg-amber-400 transition-colors">
+                + Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-10 bg-midnight/80 border-y border-amber-500/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        
+        <div class="flex items-center gap-3 p-3 rounded-2xl bg-navyDark/60 border border-amber-500/10">
+          <div class="p-3 bg-amber-500/10 rounded-xl text-amber-400 text-xl"><i class="fa-solid fa-leaf"></i></div>
+          <div>
+            <h4 class="font-bold text-slate-200 text-xs sm:text-sm" data-i18n="feat_1_title">100% പ്രകൃതിദത്തം</h4>
+            <p class="text-[11px] text-slate-400" data-i18n="feat_1_desc">രാസവസ്തുക്കൾ ചേർക്കാത്തത്</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 p-3 rounded-2xl bg-navyDark/60 border border-amber-500/10">
+          <div class="p-3 bg-amber-500/10 rounded-xl text-amber-400 text-xl"><i class="fa-solid fa-vial-circle-check"></i></div>
+          <div>
+            <h4 class="font-bold text-slate-200 text-xs sm:text-sm" data-i18n="feat_2_title">പരിശോധിച്ച ഗുണനിലവാരം</h4>
+            <p class="text-[11px] text-slate-400" data-i18n="feat_2_desc">ഗുണമേന്മ ഉറപ്പുതരുന്നു</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 p-3 rounded-2xl bg-navyDark/60 border border-amber-500/10">
+          <div class="p-3 bg-amber-500/10 rounded-xl text-amber-400 text-xl"><i class="fa-solid fa-truck-fast"></i></div>
+          <div>
+            <h4 class="font-bold text-slate-200 text-xs sm:text-sm" data-i18n="feat_3_title">വേഗത്തിലുള്ള ഡെലിവറി</h4>
+            <p class="text-[11px] text-slate-400" data-i18n="feat_3_desc">വീട്ടുപടിക്കൽ എത്തിക്കുന്നു</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 p-3 rounded-2xl bg-navyDark/60 border border-amber-500/10">
+          <div class="p-3 bg-amber-500/10 rounded-xl text-amber-400 text-xl"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <div>
+            <h4 class="font-bold text-slate-200 text-xs sm:text-sm" data-i18n="feat_4_title">വിശ്വസ്ത സേവനം</h4>
+            <p class="text-[11px] text-slate-400" data-i18n="feat_4_desc">സന്തോഷകരമായ ഉപഭോക്താക്കൾ</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center space-y-3 mb-10">
+        <span class="text-amber-400 text-xs font-semibold tracking-widest uppercase" data-i18n="catalog_subtitle">Pure Selections</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-serif text-slate-100" data-i18n="catalog_title">
+          അൽ ഖമർ പ്രീമിയം ഹണി ശേഖരം
+        </h2>
+        <p class="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto" data-i18n="catalog_desc">
+          നിങ്ങളുടെ ആവശ്യാനുസരണം അളവുകളും വകഭേദങ്ങളും തിരഞ്ഞെടുത്തു ഓർഡർ ചെയ്യാം
+        </p>
+
+        <!-- Search Bar and Filter Badges -->
+        <div class="max-w-md mx-auto pt-4 relative">
+          <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Search honey variant..." class="w-full pl-10 pr-4 py-2.5 rounded-full bg-midnight border border-amber-500/30 text-slate-200 text-xs focus:border-amber-400 focus:outline-none">
+          <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-7 text-slate-400 text-xs"></i>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-2 pt-4" id="categoryFilters">
+          <button onclick="filterCategory('all')" class="cat-btn active-cat px-4 py-1.5 rounded-full text-xs font-bold bg-amber-500 text-navyDark transition-all">All</button>
+          <button onclick="filterCategory('wild')" class="cat-btn px-4 py-1.5 rounded-full text-xs font-bold bg-midnight border border-amber-500/30 text-slate-300 hover:text-amber-400 transition-all">Wild Honey</button>
+          <button onclick="filterCategory('sidr')" class="cat-btn px-4 py-1.5 rounded-full text-xs font-bold bg-midnight border border-amber-500/30 text-slate-300 hover:text-amber-400 transition-all">Cheru Theen</button>
+          <button onclick="filterCategory('comb')" class="cat-btn px-4 py-1.5 rounded-full text-xs font-bold bg-midnight border border-amber-500/30 text-slate-300 hover:text-amber-400 transition-all">Special Items</button>
+        </div>
+      </div>
+
+      <!-- Product Cards Container -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="productsContainer"></div>
+
+    </div>
+  </section>
+
+  <section id="benefits" class="py-20 bg-midnight/80 border-t border-amber-500/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center space-y-3 mb-12">
+        <span class="text-amber-400 text-xs font-semibold tracking-widest uppercase">Health Benefits</span>
+        <h2 class="text-3xl font-bold font-serif text-slate-100" data-i18n="benefits_title">ശുദ്ധമായ തേൻ കഴിക്കുന്നതിന്റെ പ്രധാന ഗുണങ്ങൾ</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-3xl bg-navyDark border border-amber-500/20 space-y-3">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center text-amber-400 text-xl">
+            <i class="fa-solid fa-shield-virus"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-100">രോഗപ്രതിരോധ ശേഷി വര്‍ദ്ധിപ്പിക്കുന്നു</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">ആന്റിഓക്‌സിഡന്റുകൾ ധാരാളമായി അടങ്ങിയിട്ടുള്ളതിനാൽ ശരീരത്തിന് ആവശ്യമായ പ്രതിരോധ ശക്തി നൽകുന്നു.</p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-navyDark border border-amber-500/20 space-y-3">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center text-amber-400 text-xl">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-100">ഹൃദയാരോഗ്യത്തിന് ഉത്തമം</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">രക്തചംക്രമണം മെച്ചപ്പെടുത്താനും കൊളസ്‌ട്രോൾ നിയന്ത്രിക്കാനും സ്വാഭാവിക തേൻ സഹായിക്കുന്നു.</p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-navyDark border border-amber-500/20 space-y-3">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center text-amber-400 text-xl">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-100">തൽക്ഷണ ഊർജ്ജസ്വലത</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">സ്വാഭാവിക ഗ്ലൂക്കോസും ഫ്രക്റ്റോസും ഉള്ളതുകൊണ്ട് ദിവസവും ഉപയോഗിക്കുന്നത് ഊർജ്ജം നിലനിർത്തും.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+      <span class="text-amber-400 text-xs font-semibold tracking-widest uppercase">Our Story</span>
+      <h2 class="text-3xl sm:text-4xl font-bold font-serif text-slate-100" data-i18n="about_title">
+        അൽ ഖമർ ഹണിയുടെ കഥ
+      </h2>
+      <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto" data-i18n="about_desc">
+        ആകാശത്ത് തിളങ്ങിനിൽക്കുന്ന ചന്ദ്രന്റെ പരിശുദ്ധിയും വെളിച്ചവും ഉൾക്കൊണ്ട് രൂപംകൊണ്ട സംരംഭമാണ് **അൽ ഖമർ (Al Qamar)**. പ്രകൃതിദത്ത തേൻ അതിന്റെ ജീവഗുണങ്ങളോടെ ജനങ്ങളിലേക്ക് എത്തിക്കുക എന്നതാണ് ഞങ്ങളുടെ ലക്ഷ്യം.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 text-left">
+        <div class="p-6 rounded-2xl bg-midnight border border-amber-500/20 space-y-2">
+          <i class="fa-solid fa-tree text-2xl text-amber-400"></i>
+          <h3 class="font-bold text-slate-200 text-sm" data-i18n="ab1_title">വിശ്വസ്ത ശേഖരണം</h3>
+          <p class="text-xs text-slate-400" data-i18n="ab1_desc">വനാന്തരങ്ങളിൽ നിന്നും പ്രകൃതിദത്ത തോട്ടങ്ങളിൽ നിന്നും നേരിട്ട് ശേഖരിക്കുന്നു.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-midnight border border-amber-500/20 space-y-2">
+          <i class="fa-solid fa-filter-circle-xmark text-2xl text-amber-400"></i>
+          <h3 class="font-bold text-slate-200 text-sm" data-i18n="ab2_title">പ്രോസസ്സിംഗ് ഇല്ലാതെ</h3>
+          <p class="text-xs text-slate-400" data-i18n="ab2_desc">പ്രകൃതിദത്ത ഗുണങ്ങളും പോഷകങ്ങളും ചോർന്നുപോകാതെ ശുദ്ധമായി സൂക്ഷിക്കുന്നു.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-midnight border border-amber-500/20 space-y-2">
+          <i class="fa-solid fa-face-smile text-2xl text-amber-400"></i>
+          <h3 class="font-bold text-slate-200 text-sm" data-i18n="ab3_title">ഉപഭോക്തൃ സ്നേഹം</h3>
+          <p class="text-xs text-slate-400" data-i18n="ab3_desc">ആയിരക്കണക്കിന് സംതൃപ്ത കുടുംബങ്ങളുടെ നന്മയുടെ കൂട്ട്.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="py-20 bg-midnight/60 border-t border-amber-500/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center space-y-3 mb-12">
+        <span class="text-amber-400 text-xs font-semibold tracking-widest uppercase">Customer Voices</span>
+        <h2 class="text-3xl font-bold font-serif text-slate-100" data-i18n="rev_title">ഉപഭോക്താക്കളുടെ അഭിപ്രായങ്ങൾ</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-navyDark border border-slate-800 space-y-3">
+          <div class="flex text-amber-400 text-xs gap-1">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-xs text-slate-300 italic">"വളരെ ശുദ്ധമായ കാട്ടുതേൻ! കുടുംബത്തിലെല്ലാവർക്കും എറെ ഇഷ്ടപ്പെട്ടു. നല്ല പാക്കിംഗും വേഗത്തിലുള്ള ഡെലിവറിയും."</p>
+          <div class="pt-2 border-t border-slate-800 text-xs font-bold text-amber-300">- മുഹമ്മദ്‌ റഫീഖ് (കോഴിക്കോട്)</div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-navyDark border border-slate-800 space-y-3">
+          <div class="flex text-amber-400 text-xs gap-1">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-xs text-slate-300 italic">"Cheru Theen is top quality. Pure taste and original aroma. Highly recommended Al Qamar!"</p>
+          <div class="pt-2 border-t border-slate-800 text-xs font-bold text-amber-300">- Anjali Nair (Kochi)</div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-navyDark border border-slate-800 space-y-3">
+          <div class="flex text-amber-400 text-xs gap-1">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-xs text-slate-300 italic">"വാട്സാപ്പ് വഴി എളുപ്പത്തിൽ ഓർഡർ ചെയ്യാനും തൊട്ടടുത്ത ദിവസം തന്നെ വീട്ടിലെത്താനും സാധിച്ചു. വിശ്വസിക്കാം."</p>
+          <div class="pt-2 border-t border-slate-800 text-xs font-bold text-amber-300">- സലീം വി.പി (മലപ്പുറം)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-20 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <div class="text-center space-y-2">
+        <span class="text-amber-400 text-xs font-semibold tracking-widest uppercase">FAQ</span>
+        <h2 class="text-3xl font-bold font-serif text-slate-100" data-i18n="faq_title">സാധാരണ സംശയങ്ങളും ഉത്തരങ്ങളും</h2>
+      </div>
+
+      <div class="space-y-4">
+        <div class="rounded-2xl bg-midnight border border-amber-500/20 overflow-hidden">
+          <button onclick="toggleFaq(1)" class="w-full p-4 text-left flex justify-between items-center text-sm font-bold text-slate-200 hover:text-amber-400">
+            <span>അൽ ഖമർ ഹണി 100% ശുദ്ധമാണോ?</span>
+            <i class="fa-solid fa-chevron-down text-amber-400" id="faqIcon1"></i>
+          </button>
+          <div id="faqAns1" class="hidden p-4 pt-0 text-xs text-slate-400 border-t border-slate-800/50">
+            അതെ, പൂർണ്ണമായും പ്രകൃതിദത്തമായി വനങ്ങളിൽ നിന്നും ഓർഗാനിക് തോട്ടങ്ങളിൽ നിന്നും ശേഖരിക്കുന്ന തേൻ മാത്രമാണ് ഞങ്ങൾ വിതരണം ചെയ്യുന്നത്. യാതൊരു രാസവസ്തുക്കളോ മധുരങ്ങളോ ഇതിൽ ചേർക്കുന്നില്ല.
+          </div>
+        </div>
+
+        <div class="rounded-2xl bg-midnight border border-amber-500/20 overflow-hidden">
+          <button onclick="toggleFaq(2)" class="w-full p-4 text-left flex justify-between items-center text-sm font-bold text-slate-200 hover:text-amber-400">
+            <span>ഓർഡർ ചെയ്താൽ എത്ര ദിവസത്തിനുള്ളിൽ ഡെലിവറി ലഭിക്കും?</span>
+            <i class="fa-solid fa-chevron-down text-amber-400" id="faqIcon2"></i>
+          </button>
+          <div id="faqAns2" class="hidden p-4 pt-0 text-xs text-slate-400 border-t border-slate-800/50">
+            കേരളത്തിലുടനീളം 2 മുതൽ 4 ദിവസത്തിനുള്ളിൽ സുരക്ഷിതമായി നിങ്ങളിലേക്ക് കൊറിയർ / ഹോം ഡെലിവറി വഴിയെത്തിക്കുന്നു.
+          </div>
+        </div>
+
+        <div class="rounded-2xl bg-midnight border border-amber-500/20 overflow-hidden">
+          <button onclick="toggleFaq(3)" class="w-full p-4 text-left flex justify-between items-center text-sm font-bold text-slate-200 hover:text-amber-400">
+            <span>മൊത്തവ്യാപാരത്തിന് (Wholesale) ലഭ്യമാണോ?</span>
+            <i class="fa-solid fa-chevron-down text-amber-400" id="faqIcon3"></i>
+          </button>
+          <div id="faqAns3" class="hidden p-4 pt-0 text-xs text-slate-400 border-t border-slate-800/50">
+            അതെ, ബൾക്ക് ഓർഡറുകൾക്കും റീസെല്ലർമാർക്കും പ്രത്യേക ഡിസ്കൗണ്ടിൽ ലഭിക്കും. കൂടുതൽ വിവരങ്ങൾക്ക് വാട്സാപ്പിൽ ബന്ധപ്പെടാവുന്നതാണ്.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 bg-midnight/90 border-t border-amber-500/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        
+        <div class="space-y-6">
+          <span class="text-amber-400 text-xs font-semibold tracking-widest uppercase">Contact Us</span>
+          <h2 class="text-3xl font-bold font-serif text-slate-100" data-i18n="contact_title">
+            ഓർഡർ ചെയ്യുന്നതിനായോ സംശയങ്ങൾക്കോ ഞങ്ങളെ വിളിക്കൂ
+          </h2>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <p class="text-[10px] text-slate-400">Helpline / Phone</p>
+                <a href="tel:+919946093522" class="text-base font-bold text-slate-200 hover:text-amber-400 transition-colors" id="displayPhone1">+91 99460 93522</a>
+                <p class="text-xs text-slate-400 mt-0.5"><i class="fa-solid fa-location-dot text-amber-400"></i> Kurumbathur, Malappuram DT, Kerala Pin: 676301</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <p class="text-[10px] text-slate-400">WhatsApp Direct</p>
+                <a href="https://wa.me/919946093522?text=Hello%20Al%20Qamar%20Honey" target="_blank" rel="noopener noreferrer" class="text-base font-bold text-emerald-400 hover:underline" id="displayPhone2">+91 99460 93522</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Form -->
+        <div class="p-8 rounded-3xl bg-navyDark border border-amber-500/20 shadow-2xl space-y-4">
+          <h3 class="text-xl font-bold text-amber-300 font-serif">തത്സമയ വാട്സാപ്പ് ഓർഡർ ഫോറം</h3>
+          
+          <form onsubmit="submitQuickForm(event)" class="space-y-4">
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">പേര് (Name)</label>
+              <input type="text" id="custName" required placeholder="ഉദാ: അഹമ്മദ്" class="w-full px-4 py-3 rounded-xl bg-midnight border border-slate-700 text-slate-100 text-xs focus:border-amber-500 focus:outline-none">
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">സ്ഥലം (Address / City)</label>
+              <input type="text" id="custAddress" required placeholder="ഉദാ: മലപ്പുറം" class="w-full px-4 py-3 rounded-xl bg-midnight border border-slate-700 text-slate-100 text-xs focus:border-amber-500 focus:outline-none">
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">പ്രൊഡക്റ്റ് തിരഞ്ഞെടുക്കുക</label>
+              <select id="custProductSelect" class="w-full px-4 py-3 rounded-xl bg-midnight border border-slate-700 text-slate-100 text-xs focus:border-amber-500 focus:outline-none">
+                <!-- Dynamically filled -->
+              </select>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl text-xs transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>WhatsApp വഴി ബന്ധപ്പെടാം</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-navyDark border-t border-amber-500/20 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+      <div class="flex items-center justify-center gap-2">
+        <div class="w-10 h-10 rounded-full bg-white p-0.5 border border-amber-400 flex items-center justify-center">
+          <svg viewBox="0 0 200 200" class="w-full h-full">
+            <circle cx="100" cy="100" r="92" fill="none" stroke="#D97706" stroke-width="6"/>
+            <path d="M88 38 C83 26, 75 26, 72 29 M112 38 C117 26, 125 26, 128 29" fill="none" stroke="#D97706" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="72" cy="29" r="4" fill="#D97706"/>
+            <circle cx="128" cy="29" r="4" fill="#D97706"/>
+            <circle cx="100" cy="46" r="12" fill="#F59E0B" stroke="#D97706" stroke-width="2.5"/>
+            <path d="M88 52 C45 30, 20 58, 52 76 C74 88, 86 66, 91 58" fill="none" stroke="#D97706" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M112 52 C155 30, 180 58, 148 76 C126 88, 114 66, 109 58" fill="none" stroke="#D97706" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M86 75 C86 75, 100 68, 114 75 C119 90, 114 108, 100 122 C86 108, 81 90, 86 75 Z" fill="#F59E0B" stroke="#D97706" stroke-width="2.5"/>
+            <path d="M84 86 C91 82, 109 82, 116 86" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+            <path d="M86 97 C92 93, 108 93, 114 97" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="font-serif text-lg font-bold text-amber-400">AL QAMAR HONEYS</span>
+      </div>
+      <p class="text-xs text-slate-400 max-w-md mx-auto">
+        അൽ ഖമർ ഹണി - പ്രകൃതിയുടെ അമൃത് നിങ്ങളുടെ വീടുകളിലേക്ക്.
+      </p>
+      <p class="text-[11px] text-slate-500 pt-4 border-t border-slate-800">
+        © 2026 Al Qamar Honey. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <div id="cartModal" class="fixed inset-y-0 right-0 w-full max-w-sm bg-midnight border-l border-amber-500/30 z-50 transform translate-x-full transition-transform duration-300 p-6 flex flex-col justify-between">
+    <div class="space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <h3 class="font-bold text-slate-100 text-sm font-serif">Your Shopping Cart</h3>
+        <button onclick="toggleCartModal()" class="text-slate-400 hover:text-slate-100 text-lg">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div id="cartItemsList" class="space-y-3 max-h-[60vh] overflow-y-auto"></div>
+    </div>
+    <div class="pt-4 border-t border-slate-800 space-y-3">
+      <div class="flex items-center justify-between font-bold text-sm">
+        <span class="text-slate-300">Total:</span>
+        <span id="cartTotalPrice" class="text-amber-400">₹0</span>
+      </div>
+      <button onclick="checkoutCartViaWhatsapp()" class="w-full py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl text-xs transition-all flex items-center justify-center gap-2">
+        <i class="fa-brands fa-whatsapp text-base"></i>
+        <span>WhatsApp വഴി ഓർഡർ ചെയ്യാം</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="customizerDrawer" class="fixed inset-y-0 right-0 w-full max-w-md bg-midnight border-l border-amber-500/30 z-50 transform translate-x-full transition-transform duration-300 p-6 flex flex-col justify-between overflow-y-auto">
+    <div class="space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-sliders text-amber-400"></i>
+          <h3 class="font-bold text-slate-100 text-sm font-serif">Site Customizer Panel</h3>
+        </div>
+        <button onclick="toggleCustomizerDrawer()" class="text-slate-400 hover:text-slate-100 text-lg">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Add New Product Form -->
+      <div class="space-y-3 p-4 rounded-2xl bg-navyDark border border-amber-500/20">
+        <h4 class="text-xs font-bold text-amber-300">പുതിയ പ്രൊഡക്റ്റ് ചേർക്കുക</h4>
+        <div>
+          <label class="block text-[10px] text-slate-400 mb-1">Product Name (English)</label>
+          <input type="text" id="newProdName" placeholder="Sidr Honey 1KG" class="w-full px-3 py-2 rounded-lg bg-midnight border border-slate-700 text-xs text-slate-200">
+        </div>
+        <div>
+          <label class="block text-[10px] text-slate-400 mb-1">പേര് (മലയാളം)</label>
+          <input type="text" id="newProdMalName" placeholder="സിദർ ഹണി 1KG" class="w-full px-3 py-2 rounded-lg bg-midnight border border-slate-700 text-xs text-slate-200">
+        </div>
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="block text-[10px] text-slate-400 mb-1">വില (Price ₹)</label>
+            <input type="number" id="newProdPrice" placeholder="1200" class="w-full px-3 py-2 rounded-lg bg-midnight border border-slate-700 text-xs text-slate-200">
+          </div>
+          <div>
+            <label class="block text-[10px] text-slate-400 mb-1">അളവ് (Weight)</label>
+            <input type="text" id="newProdWeight" placeholder="1KG / 500GM" class="w-full px-3 py-2 rounded-lg bg-midnight border border-slate-700 text-xs text-slate-200">
+          </div>
+        </div>
+        <div>
+          <label class="block text-[10px] text-slate-400 mb-1">Category</label>
+          <select id="newProdCat" class="w-full px-3 py-2 rounded-lg bg-midnight border border-slate-700 text-xs text-slate-200">
+            <option value="wild">Wild Honey</option>
+            <option value="sidr">Cheru Theen</option>
+            <option value="comb">Special Items</option>
+          </select>
+        </div>
+        <button onclick="addNewProductItem()" class="w-full py-2.5 bg-amber-500 hover:bg-amber-400 text-navyDark font-bold rounded-lg text-xs transition-all">
+          + Add Product
+        </button>
+      </div>
+
+      <!-- Quick Text Customizer -->
+      <div class="space-y-3 p-4 rounded-2xl bg-navyDark border border-amber-500/20">
+        <h4 class="text-xs font-bold text-amber-300">സൈറ്റ് ടെക്സ്റ്റുകൾ മാറ്റുക</h4>
+        <div>
+          <label class="block text-[10px] text-slate-400 mb-1">Hero Title</label>
+          <input type="text" id="editHeroTitle" placeholder="അൽ ഖമർ ഹണി" class="w-full px-3 py-2 rounded-lg bg-midnight border border-slate-700 text-xs text-slate-200">
+        </div>
+        <div>
+          <label class="block text-[10px] text-slate-400 mb-1">Hero Subtitle</label>
+          <input type="text" id="editHeroSubtitle" placeholder="പ്രകൃതിയുടെ മധുരവും പരിശുദ്ധിയും ഒരു കുപ്പിയിൽ" class="w-full px-3 py-2 rounded-lg bg-midnight border border-slate-700 text-xs text-slate-200">
+        </div>
+        <div>
+          <label class="block text-[10px] text-slate-400 mb-1">Phone Number</label>
+          <input type="text" id="editPhone" placeholder="+91 99460 93522" class="w-full px-3 py-2 rounded-lg bg-midnight border border-slate-700 text-xs text-slate-200">
+        </div>
+        <button onclick="applySiteCustomizations()" class="w-full py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-lg text-xs transition-all">
+          Apply Changes
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let siteLanguage = 'ml';
+    let currentCategory = 'all';
+    let cart = [];
+
+    let products = [
+      {
+        id: 1,
+        title: "Valiya Theen 1KG",
+        malName: "വലിയ തേൻ 1KG",
+        category: "wild",
+        price: 500,
+        weight: "1KG",
+        rating: "5.0",
+        desc: "ശുദ്ധമായ വലിയ തേൻ - 1KG.",
+        descEn: "Pure Valiya Honey in 1KG packaging."
+      },
+      {
+        id: 2,
+        title: "Kattu Theen 1KG",
+        malName: "കാട്ടു തേൻ 1KG",
+        category: "wild",
+        price: 800,
+        weight: "1KG",
+        rating: "5.0",
+        desc: "വനങ്ങളിൽ നിന്ന് നേരിട്ട് ശേഖരിച്ച ശുദ്ധമായ കാട്ടുതേൻ 1KG.",
+        descEn: "Pure Wild Honey in 1KG packaging."
+      },
+      {
+        id: 3,
+        title: "Cheru Theen 1KG",
+        malName: "ചെറു തേൻ 1KG",
+        category: "sidr",
+        price: 2200,
+        weight: "1KG",
+        rating: "5.0",
+        desc: "ഔഷധ ഗുണങ്ങൾ നിറഞ്ഞ ചെറുതേൻ 1KG.",
+        descEn: "Pure Cheru Theen in 1KG packaging."
+      },
+      {
+        id: 4,
+        title: "Cheru Theen 500GM",
+        malName: "ചെറു തേൻ 500GM",
+        category: "sidr",
+        price: 1100,
+        weight: "500GM",
+        rating: "5.0",
+        desc: "ഉയർന്ന ഔഷധ ഗുണമുള്ള ചെറുതേൻ 500GM അളവിൽ.",
+        descEn: "Pure Cheru Theen in 500GM packaging."
+      },
+      {
+        id: 5,
+        title: "Valiya Theen 500GM",
+        malName: "വലിയ തേൻ 500GM",
+        category: "wild",
+        price: 250,
+        weight: "500GM",
+        rating: "4.9",
+        desc: "ശുദ്ധമായ വലിയ തേൻ - 500GM.",
+        descEn: "Pure Valiya Honey in 500GM packaging."
+      },
+      {
+        id: 6,
+        title: "Kattu Theen 500GM",
+        malName: "കാട്ടു തേൻ 500GM",
+        category: "wild",
+        price: 250,
+        weight: "500GM",
+        rating: "4.9",
+        desc: "പ്രകൃതിദത്ത കാട്ടുതേൻ - 500GM.",
+        descEn: "Pure Wild Honey in 500GM packaging."
+      },
+      {
+        id: 7,
+        title: "Theen Nellikka 7PCS",
+        malName: "തേൻ നെല്ലിക്ക 7PCS",
+        category: "comb",
+        price: 100,
+        weight: "7 PCS",
+        rating: "5.0",
+        desc: "ആരോഗ്യപ്രദമായ ശുദ്ധമായ തേനൂറിയ നെല്ലിക്ക 7 കഷണങ്ങൾ.",
+        descEn: "Healthy Honey soaked Gooseberries (7 PCS)."
+      }
+    ];
+
+    const translations = {
+      en: {
+        nav_subtext: "Al Qamar Honey",
+        nav_home: "Home",
+        nav_products: "Products",
+        nav_benefits: "Benefits",
+        nav_about: "About Us",
+        nav_reviews: "Reviews",
+        nav_faq: "FAQ",
+        nav_contact: "Contact",
+        cta_order: "Order Honey Now",
+        cta_whatsapp: "Direct WhatsApp",
+        stat_pure: "Pure & Organic",
+        stat_tested: "Lab Tested",
+        catalog_subtitle: "Pure Selections",
+        catalog_title: "Al Qamar Premium Honey Collection",
+        catalog_desc: "Choose your favorite honey variants and sizes for fast home delivery",
+        benefits_title: "Key Health Benefits of Pure Honey",
+        about_title: "The Story of Al Qamar",
+        rev_title: "Customer Reviews",
+        faq_title: "Frequently Asked Questions",
+        contact_title: "Contact Us to Order or Inquire"
+      },
+      ml: {
+        nav_subtext: "അൽ ഖമർ ഹണി",
+        nav_home: "ഹോം",
+        nav_products: "പ്രൊഡക്റ്റുകൾ",
+        nav_benefits: "ഗുണങ്ങൾ",
+        nav_about: "ഞങ്ങളെക്കുറിച്ച്",
+        nav_reviews: "അഭിപ്രായങ്ങൾ",
+        nav_faq: "സംശയങ്ങൾ",
+        nav_contact: "ബന്ധപ്പെടാൻ",
+        cta_order: "തേൻ ഓർഡർ ചെയ്യൂ",
+        cta_whatsapp: "WhatsApp നേരിട്ട് ബന്ധപ്പെടാം",
+        stat_pure: "തനിമയാർന്നത്",
+        stat_tested: "ലാബ് പരിശോധിച്ചത്",
+        catalog_subtitle: "Pure Selections",
+        catalog_title: "അൽ ഖമർ പ്രീമിയം ഹണി ശേഖരം",
+        catalog_desc: "നിങ്ങളുടെ ആവശ്യാനുസരണം അളവുകളും വകഭേദങ്ങളും തിരഞ്ഞെടുത്തു ഓർഡർ ചെയ്യാം",
+        benefits_title: "ശുദ്ധമായ തേൻ കഴിക്കുന്നതിന്റെ പ്രധാന ഗുണങ്ങൾ",
+        about_title: "അൽ ഖമർ ഹണിയുടെ കഥ",
+        rev_title: "ഉപഭോക്താക്കളുടെ അഭിപ്രായങ്ങൾ",
+        faq_title: "സാധാരണ സംശയങ്ങളും ഉത്തരങ്ങളും",
+        contact_title: "ഓർഡർ ചെയ്യുന്നതിനായോ സംശയങ്ങൾക്കോ ഞങ്ങളെ വിളിക്കൂ"
+      }
+    };
+
+    window.onload = function() {
+      renderProducts(products);
+      populateProductDropdown();
+    };
+
+    function renderProducts(items) {
+      const container = document.getElementById('productsContainer');
+      container.innerHTML = '';
+
+      if (items.length === 0) {
+        container.innerHTML = `<div class="col-span-full text-center py-10 text-slate-400 text-sm">No honey items found matching your search.</div>`;
+        return;
+      }
+
+      items.forEach(prod => {
+        const title = siteLanguage === 'ml' ? prod.malName : prod.title;
+        const desc = siteLanguage === 'ml' ? prod.desc : prod.descEn;
+
+        const card = document.createElement('div');
+        card.className = "p-6 rounded-3xl bg-midnight border border-amber-500/20 hover:border-amber-500/50 transition-all space-y-4 flex flex-col justify-between gold-border-glow";
+        card.innerHTML = `
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] uppercase font-bold text-amber-400 px-2.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/20">${prod.category}</span>
+              <span class="text-xs text-amber-300 font-bold"><i class="fa-solid fa-star"></i> ${prod.rating}</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-100 font-serif">${title}</h3>
+            <p class="text-xs text-slate-400 line-clamp-2">${desc}</p>
+          </div>
+
+          <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+            <div>
+              <span class="text-lg font-bold text-amber-300">₹${prod.price}</span>
+              <span class="text-[11px] text-slate-400 font-normal"> / ${prod.weight}</span>
+            </div>
+            <div class="flex gap-2">
+              <button onclick="addToCart(${prod.id})" class="p-2.5 bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 rounded-full text-xs transition-colors" title="Add to Cart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button onclick="triggerDirectWhatsapp('Order: ${prod.title} (${prod.weight}) - ₹${prod.price}')" class="px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-full text-xs transition-colors flex items-center gap-1.5">
+                <i class="fa-brands fa-whatsapp text-sm"></i> Order
+              </button>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function populateProductDropdown() {
+      const select = document.getElementById('custProductSelect');
+      if (!select) return;
+      select.innerHTML = '';
+      products.forEach(p => {
+        const opt = document.createElement('option');
+        opt.value = `${p.title} (${p.weight}) - ₹${p.price}`;
+        opt.textContent = `${p.malName} - ₹${p.price}`;
+        select.appendChild(opt);
+      });
+    }
+
+    function handleSearch() {
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      const filtered = products.filter(p => {
+        const matchesCategory = currentCategory === 'all' || p.category === currentCategory;
+        const matchesQuery = p.title.toLowerCase().includes(query) || p.malName.toLowerCase().includes(query);
+        return matchesCategory && matchesQuery;
+      });
+      renderProducts(filtered);
+    }
+
+    function filterCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        btn.classList.remove('bg-amber-500', 'text-navyDark');
+        btn.classList.add('bg-midnight', 'text-slate-300');
+      });
+      event.target.classList.remove('bg-midnight', 'text-slate-300');
+      event.target.classList.add('bg-amber-500', 'text-navyDark');
+      handleSearch();
+    }
+
+    function addToCart(productId) {
+      const item = products.find(p => p.id === productId);
+      if (!item) return;
+
+      const existing = cart.find(c => c.id === productId);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ ...item, qty: 1 });
+      }
+
+      updateCartBadge();
+      showToast(`${item.malName} cart-ൽ ചേർത്തു!`);
+    }
+
+    function updateCartBadge() {
+      const totalCount = cart.reduce((acc, curr) => acc + curr.qty, 0);
+      document.getElementById('cartCountBadge').textContent = totalCount;
+      renderCartItems();
+    }
+
+    function renderCartItems() {
+      const list = document.getElementById('cartItemsList');
+      if (!list) return;
+
+      if (cart.length === 0) {
+        list.innerHTML = `<p class="text-xs text-slate-400 text-center py-6">Your cart is currently empty.</p>`;
+        document.getElementById('cartTotalPrice').textContent = `₹0`;
+        return;
+      }
+
+      list.innerHTML = '';
+      let total = 0;
+
+      cart.forEach((item, idx) => {
+        const itemTotal = item.price * item.qty;
+        total += itemTotal;
+
+        const row = document.createElement('div');
+        row.className = "flex items-center justify-between p-3 bg-navyDark border border-slate-800 rounded-xl text-xs";
+        row.innerHTML = `
+          <div>
+            <p class="font-bold text-slate-200">${item.malName}</p>
+            <p class="text-amber-400">₹${item.price} x ${item.qty} = ₹${itemTotal}</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="changeQty(${idx}, -1)" class="w-6 h-6 rounded bg-slate-800 text-slate-200 flex items-center justify-center font-bold">-</button>
+            <span class="text-slate-200 font-bold">${item.qty}</span>
+            <button onclick="changeQty(${idx}, 1)" class="w-6 h-6 rounded bg-slate-800 text-slate-200 flex items-center justify-center font-bold">+</button>
+          </div>
+        `;
+        list.appendChild(row);
+      });
+
+      document.getElementById('cartTotalPrice').textContent = `₹${total}`;
+    }
+
+    function changeQty(index, change) {
+      cart[index].qty += change;
+      if (cart[index].qty <= 0) {
+        cart.splice(index, 1);
+      }
+      updateCartBadge();
+    }
+
+    function quickAddFeatured() {
+      addToCart(2);
+    }
+
+    function triggerDirectWhatsapp(customMsg) {
+      const phone = "919946093522";
+      const text = encodeURIComponent(`Hello Al Qamar Honey, I would like to inquire/order:\n${customMsg}`);
+      window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+    }
+
+    function submitQuickForm(e) {
+      e.preventDefault();
+      const name = document.getElementById('custName').value;
+      const addr = document.getElementById('custAddress').value;
+      const prod = document.getElementById('custProductSelect').value;
+
+      const message = `*New Order Request*\nName: ${name}\nAddress: ${addr}\nProduct: ${prod}`;
+      triggerDirectWhatsapp(message);
+    }
+
+    function checkoutCartViaWhatsapp() {
+      if (cart.length === 0) {
+        showToast("Your cart is empty!");
+        return;
+      }
+
+      let summary = "*Cart Order Details*:\n";
+      let total = 0;
+      cart.forEach(c => {
+        const itemTot = c.price * c.qty;
+        total += itemTot;
+        summary += `- ${c.malName} x ${c.qty} = ₹${itemTot}\n`;
+      });
+      summary += `*Total Amount:* ₹${total}`;
+
+      triggerDirectWhatsapp(summary);
+    }
+
+    function toggleCartModal() {
+      const drawer = document.getElementById('cartModal');
+      drawer.classList.toggle('translate-x-full');
+    }
+
+    function toggleCustomizerDrawer() {
+      const drawer = document.getElementById('customizerDrawer');
+      drawer.classList.toggle('translate-x-full');
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    function toggleFaq(id) {
+      const ans = document.getElementById(`faqAns${id}`);
+      const icon = document.getElementById(`faqIcon${id}`);
+      ans.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    }
+
+    function toggleLanguage() {
+      siteLanguage = siteLanguage === 'ml' ? 'en' : 'ml';
+      document.getElementById('langLabel').textContent = siteLanguage.toUpperCase();
+      
+      const t = translations[siteLanguage];
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key]) el.textContent = t[key];
+      });
+
+      renderProducts(products);
+    }
+
+    function addNewProductItem() {
+      const name = document.getElementById('newProdName').value;
+      const malName = document.getElementById('newProdMalName').value;
+      const price = parseFloat(document.getElementById('newProdPrice').value);
+      const weight = document.getElementById('newProdWeight').value;
+      const cat = document.getElementById('newProdCat').value;
+
+      if (!name || !price || !weight) {
+        showToast("Please complete product fields");
+        return;
+      }
+
+      const newProd = {
+        id: Date.now(),
+        title: name,
+        malName: malName || name,
+        category: cat,
+        price: price,
+        weight: weight,
+        rating: "5.0",
+        desc: "ശുദ്ധമായ പ്രകൃതിദത്ത തേൻ വിഭവങ്ങൾ.",
+        descEn: "Pure authentic natural honey product."
+      };
+
+      products.push(newProd);
+      renderProducts(products);
+      populateProductDropdown();
+      showToast("New Honey Variant Added!");
+      toggleCustomizerDrawer();
+    }
+
+    function applySiteCustomizations() {
+      const title = document.getElementById('editHeroTitle').value;
+      const sub = document.getElementById('editHeroSubtitle').value;
+      const phone = document.getElementById('editPhone').value;
+
+      if (title) document.getElementById('heroTitle').textContent = title;
+      if (sub) document.getElementById('heroSubtitle').textContent = sub;
+      if (phone) {
+        document.getElementById('displayPhone1').textContent = phone;
+        document.getElementById('displayPhone2').textContent = phone;
+      }
+
+      showToast("Customizations Applied!");
+      toggleCustomizerDrawer();
+    }
+
+    function showToast(msg) {
+      const toast = document.createElement('div');
+      toast.className = "px-4 py-3 rounded-xl bg-amber-500 text-navyDark font-bold text-xs shadow-2xl animate-toast pointer-events-auto flex items-center gap-2";
+      toast.innerHTML = `<i class="fa-solid fa-circle-check"></i> <span>${msg}</span>`;
+      const container = document.getElementById('toastContainer');
+      container.appendChild(toast);
+
+      setTimeout(() => {
+        toast.remove();
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
